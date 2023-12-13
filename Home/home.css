@@ -1,0 +1,899 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.sombra{
+    width: 100vw;
+    height: 65vh;
+    background-color: #FC7900;
+    position: absolute;
+    opacity: 0.4;
+    box-shadow: #FC7900 0px 50px 100px 80px;
+    z-index: -3;
+    top: 0vh;
+}
+
+html {
+    overflow: hidden;
+}
+  
+body {
+    height: 100vh;
+    padding-bottom: 22vh;
+    width: 100vw;
+    display: grid;
+    grid-template-areas: 
+      "header"
+      "main"
+      "nav";
+    grid-template-rows: 18vh 1fr auto;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-width: none; /* Para navegadores Firefox */
+    -ms-overflow-style: none; /* Para navegadores IE e Edge */
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+  
+header {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding: 2vh 5vw 0vh 5vw;
+}
+  
+.intro {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.intro img {
+    height: 8vh;
+    width: 16vw;
+}
+  
+.info {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+  
+.info span {
+    color: white;
+    font-size: 5vw;
+}
+  
+h1 {
+    color: white;
+    font-size: 9vw;
+}
+  
+.pesquisa {
+    background-color: white;
+    border-radius: 8px;
+    width: 100%;
+    height: 40%;
+    margin-top: 1vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 3vw;
+}
+  
+.pesquisa img {
+    height: 4vh;
+    width: 8vw;
+}
+  
+input {
+    border: none;
+    outline: none;
+    width: 80%;
+    font-size: 5vw;
+}
+  
+input::placeholder {
+    font-size: 4vw;
+}
+  
+main {
+    width: 100%;
+    padding-left: 5vw;
+    display: flex;
+    flex-direction: column;
+}
+  
+h2 {
+    color: white;
+    font-size: 5vw;
+    margin-top: 2vh;
+    margin-bottom: 1vh;
+}
+  
+.categorias {
+    display: flex;
+    flex-direction: row;
+    gap: 3vw;
+    align-items: center;
+}
+  
+.img_categoria {
+    height: 7vh;
+    width: 12vw;
+    background-color: red;
+    border-radius: 8px;
+    padding: 1vh 2vw;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+  
+.favoritas {
+    display: flex;
+    overflow-x: auto;
+    width: 100vw;
+    gap: 2vw;
+    padding-right: 8vw;
+    overflow-y: hidden;
+    scrollbar-width: none; /* Para navegadores Firefox */
+    -ms-overflow-style: none; /* Para navegadores IE e Edge */
+}
+
+.favoritas::-webkit-scrollbar {
+    display: none;
+}
+  
+.pizza {
+    min-width: 42vw;
+    height: 14vh;
+    position: relative;
+}
+
+.pizza_rec{
+    min-width: 50vw;
+    height: 20vh;
+    position: relative;
+}
+
+.img_pizzas{
+    height: 100%;
+    width: 100%;
+}
+  
+h3 {
+    position: absolute;
+    bottom: 6vh;
+    background-color: red;
+    border-radius: 8px;
+    color: white;
+    padding: 0vh 2vw;
+    font-size: 3.5vw;
+}
+  
+h4 {
+    position: absolute;
+    bottom: 0.6vh;
+    background-color: rgb(0, 0, 0, 0.4);
+    color: white;
+    width: 37vw;
+    height: 5vh;
+    padding: 0.4vh 1vw;
+    border-top-right-radius: 12px;
+    font-size: 4vw;
+}
+  
+.recomendados {
+    display: flex;
+    overflow-x: auto;
+    width: 100vw;
+    gap: 2vw;
+    padding-right: 8vw;
+    overflow-y: hidden;
+    scrollbar-width: none; /* Para navegadores Firefox */
+    -ms-overflow-style: none; /* Para navegadores IE e Edge */
+}
+
+.recomendados::-webkit-scrollbar {
+    display: none;
+}
+  
+.pizza_recomendados {
+    min-width: 50vw;
+    height: 17vh;
+    position: relative;
+}
+  
+.pizza_recomendados img {
+    height: 100%;
+    width: 100%;
+}
+  
+.bebidas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 13.6vh;
+    gap: 1vh;
+    padding-right: 10vw;
+    padding-bottom: 2vh;
+}
+  
+.bebida {
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    height: 10vh;
+    width: 80vw;
+    box-shadow: 2px 2px 2px 0px black;
+    align-items: center;
+}
+  
+.bebida img {
+    height: 8vh;
+    width: 12vw;
+}
+
+.img_bebida{
+    height: 8vh;
+    width: 12vw;
+}
+  
+h6 {
+    position: absolute;
+    bottom: 1vh;
+    right: 1vw;
+    background-color: red;
+    border-radius: 5px;
+    color: white;
+    padding: 0.5vh 1.5vw;
+    font-size: 3vw;
+}
+  
+.info_texto {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+  
+.info_texto h5 {
+    font-size: 4vw;
+}
+  
+.info_texto p {
+    font-size: 3vw;
+}
+  
+nav {
+    position: fixed;
+    bottom: 0;
+    background-color: #FC7900;
+    width: 100vw;
+    height: 7vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+  
+.navegar {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+  
+.navegar span {
+    color: white;
+    font-size: 3vw;
+}
+  
+.navegar img {
+    height: 2.8vh;
+    width: 6vw;
+}
+  
+a {
+    text-decoration: none;
+}
+  
+@media(min-width: 540px){
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    .sombra{
+        width: 100vw;
+        height: 65vh;
+        background-color: #FC7900;
+        position: absolute;
+        opacity: 0.4;
+        box-shadow: #FC7900 0px 11vh 100px 90px;
+        z-index: -3;
+        top: 0vh;
+    }
+    
+    html {
+        overflow: hidden;
+    }
+      
+    body {
+        height: 100vh;
+        padding-bottom: 25vh;
+        width: 100vw;
+        display: grid;
+        grid-template-areas: 
+          "header"
+          "main"
+          "nav";
+        grid-template-rows: 22vh 1fr auto;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+      
+    header {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        padding: 2vh 5vw 0vh 5vw;
+    }
+      
+    .intro {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+      
+    .intro img {
+        height: 12vh;
+        width: 16vw;
+    }
+      
+    .info {
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+    }
+      
+    .info span {
+        color: white;
+        font-size: 3vw;
+    }
+      
+    h1 {
+        color: white;
+        font-size: 7vw;
+    }
+      
+    .pesquisa {
+        background-color: white;
+        border-radius: 8px;
+        width: 100%;
+        height: 100%;
+        margin-top: 1vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-inline: 3vw;
+    }
+      
+    .pesquisa img {
+        height: 4vh;
+        width: 6vw;
+    }
+      
+    input {
+        border: none;
+        outline: none;
+        width: 80%;
+        font-size: 3.8vw;
+    }
+      
+    input::placeholder {
+        font-size: 3.8vw;
+    }
+      
+    main {
+        width: 100%;
+        padding-left: 5vw;
+        display: flex;
+        flex-direction: column;
+    }
+      
+    h2 {
+        color: white;
+        font-size: 4vw;
+        margin-top: 2vh;
+        margin-bottom: 1vh;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+      
+    .categorias {
+        display: flex;
+        flex-direction: row;
+        gap: 3vw;
+        align-items: center;
+    }
+      
+    .categorias img {
+        height: 7vh;
+        width: 12vw;
+        background-color: red;
+        border-radius: 8px;
+        padding: 1vh 2vw;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+      
+    .favoritas {
+        display: flex;
+        overflow-x: auto;
+        width: 100vw;
+        gap: 2vw;
+        padding-right: 8vw;
+        overflow-y: hidden;
+    }
+      
+    .pizza {
+        min-width: 42vw;
+        height: 16vh;
+        position: relative;
+    }
+      
+    .pizza img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .pizza_rec{
+        min-width: 50vw;
+        height: 20vh;
+        position: relative;
+    }
+      
+    h3 {
+        position: absolute;
+        bottom: 7vh;
+        background-color: red;
+        border-radius: 8px;
+        color: white;
+        padding: 0vh 2vw;
+        font-size: 3vw;
+    }
+      
+    h4 {
+        position: absolute;
+        bottom: 0.6vh;
+        background-color: rgb(0, 0, 0, 0.4);
+        color: white;
+        width: 37vw;
+        height: 6vh;
+        padding: 0.4vh 1vw;
+        border-top-right-radius: 12px;
+        font-size: 3vw;
+    }
+      
+    .recomendados {
+        display: flex;
+        overflow-x: auto;
+        width: 100vw;
+        gap: 2vw;
+        padding-right: 8vw;
+        overflow-y: hidden;
+    }
+      
+    .pizza_recomendados {
+        min-width: 50vw;
+        height: 20vh;
+        position: relative;
+    }
+      
+    .pizza_recomendados img {
+        height: 100%;
+        width: 100%;
+    }
+      
+    .bebidas {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 13.6vh;
+        gap: 1vh;
+        padding-right: 10vw;
+        padding-bottom: 2vh;
+    }
+      
+    .bebida {
+        background-color: white;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        height: 10vh;
+        width: 80vw;
+        box-shadow: 2px 2px 2px 0px black;
+        align-items: center;
+    }
+      
+    .bebida img {
+        height: 8vh;
+        width: 12vw;
+    }
+      
+    h6 {
+        position: absolute;
+        bottom: 1vh;
+        right: 1vw;
+        background-color: red;
+        border-radius: 5px;
+        color: white;
+        padding: 0.5vh 1.5vw;
+        font-size: 3vw;
+    }
+      
+    .info_texto {
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+    }
+      
+    .info_texto h5 {
+        font-size: 4vw;
+    }
+      
+    .info_texto p {
+        font-size: 3vw;
+    }
+      
+    nav {
+        position: fixed;
+        bottom: 0;
+        background-color: #FC7900;
+        width: 100vw;
+        height: 7vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+      
+    .navegar {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+      
+    .navegar span {
+        color: white;
+        font-size: 3vw;
+    }
+      
+    .navegar img {
+        height: 2.8vh;
+        width: 5vw;
+    }
+      
+    a {
+        text-decoration: none;
+    }
+}
+
+@media (min-width: 1200px) {
+    
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    .sombra{
+        width: 100vw;
+        height: 65vh;
+        background-color: #FC7900;
+        position: absolute;
+        opacity: 0.5;
+        box-shadow: #FC7900 0px 11vh 100px 90px;
+        z-index: -3;
+        top: 0vh;
+    }
+    
+    html {
+        overflow: hidden;
+    }
+      
+    body {
+        height: 100vh;
+        padding-bottom: 25vh;
+        width: 100vw;
+        display: grid;
+        grid-template-areas: 
+          "header"
+          "main"
+          "nav";
+        grid-template-rows: 22vh 1fr auto;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+      
+    header {
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        padding: 2vh 5vw 0vh 0vw;
+        justify-content: space-between;
+        align-items: center;
+    }
+      
+    .intro {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 4vw;
+        align-items: center;
+    }
+      
+    .intro img {
+        height: 18vh;
+        width: 10vw;
+    }
+      
+    .info {
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+    }
+      
+    .info span {
+        color: white;
+        font-size: 1.6vw;
+    }
+      
+    h1 {
+        color: white;
+        font-size: 3.5vw;
+    }
+      
+    .pesquisa {
+        background-color: white;
+        border-radius: 8px;
+        width: 80%;
+        height: 50%;
+        margin-top: 0vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-inline: 3vw;
+    }
+      
+    .pesquisa img {
+        height: 6vh;
+        width: 3vw;
+    }
+      
+    input {
+        border: none;
+        outline: none;
+        width: 80%;
+        font-size: 1.6vw;
+    }
+      
+    input::placeholder {
+        font-size: 1.6vw;
+    }
+      
+    main {
+        width: 100%;
+        padding-left: 5vw;
+        display: flex;
+        flex-direction: column;
+    }
+      
+    h2 {
+        color: white;
+        font-size: 1.6vw;
+        margin-top: 2vh;
+        margin-bottom: 1vh;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+      
+    .categorias {
+        display: flex;
+        flex-direction: row;
+        gap: 1vw;
+        align-items: center;
+    }
+      
+    .categorias img {
+        height: 7vh;
+        width: 6vw;
+        background-color: red;
+        border-radius: 8px;
+        padding: 1vh 2vw;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+      
+    .favoritas {
+        display: flex;
+        overflow-x: auto;
+        width: 100vw;
+        gap: 2vw;
+        padding-right: 8vw;
+        overflow-y: hidden;
+    }
+      
+    .pizza {
+        min-width: 16vw;
+        height: 16vh;
+        position: relative;
+    }
+      
+    .pizza img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .pizza_rec{
+        min-width: 20vw;
+        height: 20vh;
+        position: relative;
+    }
+      
+    h3 {
+        position: absolute;
+        bottom: 7vh;
+        left: 0.5vw;
+        background-color: red;
+        border-radius: 8px;
+        color: white;
+        padding: 0vh 1vw;
+        font-size: 1vw;
+    }
+      
+    h4 {
+        position: absolute;
+        bottom: 0.59vh;
+        background-color: rgb(0, 0, 0, 0.4);
+        color: white;
+        width: 14vw;
+        height: 6vh;
+        padding: 0.4vh 1vw;
+        border-top-right-radius: 12px;
+        border-bottom-left-radius: 14px;
+        font-size: 1.2vw;
+    }
+      
+    .recomendados {
+        display: flex;
+        overflow-x: auto;
+        width: 100vw;
+        gap: 2vw;
+        padding-right: 8vw;
+        overflow-y: hidden;
+    }
+      
+    .pizza_recomendados {
+        min-width: 20vw;
+        height: 22vh;
+        position: relative;
+    }
+      
+    .pizza_recomendados img {
+        height: 100%;
+        width: 100%;
+    }
+      
+    .bebidas {
+        display: grid;
+        grid-template-areas: 
+        "bebida bebida bebida";
+
+        align-items: center;
+        width: 100vw;
+        height: 13.6vh;
+        gap: 1vh;
+        padding-right: 10vw;
+        padding-bottom: 2vh;
+    }
+      
+    .bebida {
+        background-color: white;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        height: 14vh;
+        width: 28vw;
+        box-shadow: 2px 2px 2px 0px black;
+        align-items: center;
+    }
+      
+    .bebida img {
+        height: 12vh;
+        width: 6vw;
+    }
+      
+    h6 {
+        position: absolute;
+        bottom: 1vh;
+        right: 1vw;
+        background-color: red;
+        border-radius: 5px;
+        color: white;
+        padding: 0.5vh 1.5vw;
+        font-size: 1vw;
+    }
+      
+    .info_texto {
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+    }
+      
+    .info_texto h5 {
+        font-size: 1.6vw;
+    }
+      
+    .info_texto p {
+        font-size: 1vw;
+    }
+      
+    nav {
+        position: fixed;
+        bottom: 0;
+        background-color: #FC7900;
+        width: 100vw;
+        height: 9vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+      
+    .navegar {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        gap: 1vw;
+    }
+      
+    .navegar span {
+        color: white;
+        font-size: 1.5vw;
+    }
+      
+    .navegar img {
+        height: 5vh;
+        width: 3vw;
+    }
+      
+    a {
+        text-decoration: none;
+    }
+}

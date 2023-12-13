@@ -1,0 +1,11 @@
+body{
+    background-image: url(https://lh3.googleusercontent.com/pw/ABLVV873YoHo05ugXMzwoQe40rScND0GdDdDQYbER5ktClJQenSh1cfmH53iqYnR6ChK6ElOhGonhE705d_-hhpMuS2hQQm82Y1NMQ73zW-0EdYrr9ye9v-raXKj6MD1iOD7M9VcEDs7gVNC9OhLRaur6QPxTlsCtkQeBprrkGQdrJ0AjTO0-YA4ElBqR_CGUBPV5QxlqVgkakBHPRIausMcJL9G-xxCs4KF44LB2Ub4NuNJsHibZJwTVjPOXhyaPRQ8P-dzUNIJC4dqBwWaLK0eKFWcXmGJKIUfc5dfLr4n57t5xlUzbjPvTTqQDehv6PmK2efqVbfGd4FMjgHExld7Ob_G0f-BM2f7jbYYvgqtJzLtqSwYJJrCkyTxS2Hr67-JD3bsDiyctFyKKgEgqxTdDl_JQy27ndmiWDN_FBX_6Vuj_3g8mW-b7A-bBzgZCkSGMjxMD8XYEJUa1Nk0bEIGstCzeR3aLmpkyeF88FjgI3Jl0rZGzRc4SwMPjH2f9pvPRLujW15U41XIzDnWzH4z_m9kc9lHGYhTo6myFdd0o2s_Qna9jrqdjZpmKM1paMmBZD9yQuBMnyEKLQEKFTQlyp6RsuG6HxINDHIRdZL3eR2B25TeCFrgYtVbcMNHewBVAxuxy07cWteRAR1tERiwtKsawG3426XVU_jnucsPR3XdMnUtgMZhM51A2Z41OQ3olJC6Oy1TAsW39ueA1U23hBfSIJj_sgtZX-eBRwCY_psNXiLd_LPqWqJ_ckHMDXeZuxYLf118bnPQusdquItVLazBJe9o5k27Ft5wNpjlq0Ui318jUWBmXCRQ2a-iPg8Y4by0Z2OJlh4IV0IvyTFyWmS_55BIBbAR_RGyLgXqIqn41DMp33ubd21l8n__HT5TOBkPLA=w360-h800-s-no-gm?authuser=0);
+    background-size: cover;
+}
+
+@media (min-width:1200px) {
+    body{
+        background-image: url(./img/pizza_back\ 1\ \(3\).png);
+        background-size: cover;
+    }
+}
